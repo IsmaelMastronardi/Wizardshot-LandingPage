@@ -5,6 +5,8 @@ import Card from './Card.astro';
 import card1 from '../../public/images/cards/card1.png';
 import card2 from '../../public/images/cards/card2.png';
 import card3 from '../../public/images/cards/card3.png';
+import star from '../../public/images/star.png';
+import chrome from '../../public/images/chrome.png';
 ---
 
 <section class="flex flex-col w-96 m-auto justify-center text-center gap-20 mb-40">
@@ -64,12 +66,23 @@ import card3 from '../../public/images/cards/card3.png';
       </p>
     </div>
   </div>
-  <div>
-    <h3>Create A Detailed Tutorial In Less Than 3 Clicks</h3>
-    <button>
-      Install Wizardshot
-    </button>
-    <p>“Has helped us write help docs 100x faster”</p>
-    <p>– Dany River, Cartier Informatie</p>
+  <div class="border-4 border-black rounded-lg">
+    <div class="p-6 flex flex-col">
+      <h3 class="title-text mb-8">Create A Detailed Tutorial In Less Than 3 Clicks</h3>
+      <button class="bg-black py-6 rounded-md items-center justify-center mb-14 text-white flex gap-2">
+        <Image src={chrome} alt="chrome" class="w-8 h-8" />
+        <p class="text-2xl">Install Wizardshot</p>
+      </button>
+      <p class="font-bold font-jackartaSans text-sm">“Has helped us write help docs 100x faster”<br />
+        <span class="font-normal">– Dany River, Cartier Informatie</span>
+      </p>
+      <ul class="flex justify-center mb-4">
+        <li><Image src={star} alt="star" class="" /></li>
+        <li><Image src={star} alt="star" class="" /></li>
+        <li><Image src={star} alt="star" class="" /></li>
+        <li><Image src={star} alt="star" class="" /></li>
+        <li><Image src={star} alt="star" class="" /></li>
+      </ul>
+    </div>
   </div>
 </section>
