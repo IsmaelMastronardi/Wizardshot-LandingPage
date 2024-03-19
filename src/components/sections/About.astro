@@ -1,0 +1,23 @@
+---
+import Card from '../Card.astro';
+import card1 from '../../../public/images/cards/card1.png';
+import card2 from '../../../public/images/cards/card2.png';
+import card3 from '../../../public/images/cards/card3.png';
+---
+
+<section id="About">
+  <h2 class="sub-title-text">
+    Say Goodbye To Writing Docs, and Hello To Wizardshot Doing it for <br /> YOU.
+  </h2>
+  <ul class="flex flex-col gap-4">
+    <Card image={card1.src} title="1. Click Capture" 
+    body="Once you install the Chrome extension, fire it up, and click “Capture”." 
+    />
+    <Card image={card2.src} title="2. Perform Your Actions" 
+    body="Once capturing, Wizardshot carefully monitors what you do to understand how to document it." 
+    />
+    <Card image={card3.src} title="3 &#x2705; . Done. Article Written" 
+    body="Wizardshot carefully crafts the perfect article based off your actions recorded. Just click “Done” and we’ll write up the article in a second." 
+    />
+  </ul>
+</section>
