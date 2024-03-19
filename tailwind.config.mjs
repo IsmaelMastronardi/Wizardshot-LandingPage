@@ -16,6 +16,7 @@ export default {
 				'customLightGray': '#f9fafb',
 				'customLightGray2': '#98a2b3',
 				'customBlue': '#03132e',
+				'customBlack': '#18181c',
 			},
 			fontSize: {
 				'xxs': '0.5rem',
