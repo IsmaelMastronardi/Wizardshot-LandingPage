@@ -6,7 +6,7 @@ import xIcon from '../../public/images/header/x.png';
 import chromeLogo from '../../public/images/chrome.png';
 ---
 
-<section class="h-16 flex w-96 m-auto bg-white fixed right-0 left-0 top-0">
+<section class="h-16 flex w-96 m-auto z-50 bg-white fixed right-0 left-0 top-0">
   <div class="flex justify-between items-center w-full h-16">
     <div class="flex gap-1 items-center">
       <Image src={appLogo} alt="app logo" class="w-5 h-5" />
@@ -19,12 +19,13 @@ import chromeLogo from '../../public/images/chrome.png';
       <Image src={xIcon} alt="close menu" />
     </button>
   </div>
-  <div id="hiddenMenu" class="hidden">
+  <hr />
+  <div id="hiddenMenu" class="hidden pt-10">
     <ul>
-      <li class="menuLink"><a>Home</a></li>
-      <li class="menuLink"><a>Features</a></li>
-      <li class="menuLink"><a>About</a></li>
-      <li class="menuLink"><a>Help Center & Comunity</a></li>
+      <li class="menuLink"><a href="#mainTitle">Home</a></li>
+      <li class="menuLink"><a href="#features">Features</a></li>
+      <li class="menuLink"><a href="#About">About</a></li>
+      <li class="menuLink"><a href="#questions">Help Center & Comunity</a></li>
       <li class="menuLink"><a>Login</a></li>
     </ul>
     <hr />
@@ -43,7 +44,7 @@ import chromeLogo from '../../public/images/chrome.png';
   const hamburguerButton = document.getElementById('hamburguerButton');
   const exitButton = document.getElementById('exitButton');
   const hiddenMenu = document.getElementById('hiddenMenu');
-
+  const liItems  = document.querySelectorAll('.menuLink');
   hamburguerButton.addEventListener('click', () => {
     menu.classList.toggle('bottom-0');
     menu.classList.toggle('h-16');
@@ -60,4 +61,14 @@ import chromeLogo from '../../public/images/chrome.png';
     hamburguerButton.classList.toggle('hidden');
     hiddenMenu.classList.toggle('hidden');
   });
+  liItems.forEach((el) => {
+    el.addEventListener('click', () => {
+    menu.classList.toggle('bottom-0');
+    menu.classList.toggle('h-16');
+    menu.classList.toggle('flex-col');
+    exitButton.classList.toggle('hidden');
+    hamburguerButton.classList.toggle('hidden');
+    hiddenMenu.classList.toggle('hidden');
+  });
+  })
 </script>
