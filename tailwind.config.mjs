@@ -6,6 +6,7 @@ export default {
 			fontFamily: {
         'jakartaSans': ['"Plus Jakarta Sans"', 'sans-serif'],
 				'openSans': ['"Open Sans"', 'sans-serif'],
+				mulish: ['"Mulish"', 'sans-serif'],
       },
 			colors: {
 				'customPurple': '#ab96f8',
@@ -13,11 +14,17 @@ export default {
 				'customGray': '#363636',
 				'customGray2': '#18181b',
 				'customLightGray': '#f9fafb',
+				'customLightGray2': '#98a2b3',
 				'customBlue': '#03132e',
 			},
 			fontSize: {
 				'xxs': '0.5rem',
+				'xxxs': '0.46rem'
 			},
+			borderWidth: {
+        '3': '3px',
+				'1.5':'1.5px',
+      },
 		},
 	},
 	plugins: [],
