@@ -10,7 +10,11 @@ export default {
 			colors: {
 				'customPurple': '#ab96f8',
 				'customPink': '#ff99d0',
-				
+				'customGray': '#363636',
+				'customGray2': '#18181b',
+			},
+			fontSize: {
+				'xxs': '0.5rem',
 			},
 		},
 	},
