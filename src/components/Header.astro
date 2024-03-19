@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets'
+import appLogo from '../../public/images/header/app-logo.png'
+import hamburger from '../../public/images/header/hamburger-menu.png'
+---
+
+<section class="h-16 flex items-center m-auto">
+  <div class="flex justify-around w-full">
+    <div class="flex">
+      <Image src={appLogo} alt="app logo" />
+      <p>Wizardshot</p>
+    </div>
+    <Image src={hamburger} alt="hamburger menu" />
+  </div>
+</section>
