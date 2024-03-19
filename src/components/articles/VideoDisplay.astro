@@ -1,14 +1,19 @@
 ---
 import { Image } from "astro:assets";
 import desktopImage from '../../../public/images/desktop-bg.png';
+import videoDisplayArrow from '../../../public/images/arrows/videoDisplayArrow.png'
 ---
 
-<article class="mt-10 text-start w-80 m-auto">
-  <p class="text-xs font-bold italic mb-1">It only takes 3 clicks to <br /> publish your first tutorial</p>
-  <div class="w-full rounded-md bg-gradient-to-b from-customPurple to-customPink p-3">
+<article class="text-start m-auto">
+  <p class="text-xxsPlus font-extrabold italic mb-1 ml-6">It only takes 3 clicks to <br /> publish your first tutorial</p>
+  <div class="w-full relative rounded-md bg-gradient-to-b from-customPurple to-customPink p-2">
     <Image
     src={desktopImage}
     alt="desktop"
-    class='rounded-sm'/>
+    class='rounded-md'/>
+    <Image
+    src={videoDisplayArrow}
+    alt="Arrow poiting at previus paragraph"
+    class="absolute -top-6 -left-2" />
   </div>
 </article>
