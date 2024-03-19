@@ -12,6 +12,7 @@ export default {
 				'customPink': '#ff99d0',
 				'customGray': '#363636',
 				'customGray2': '#18181b',
+				'customBlue': '#03132e',
 			},
 			fontSize: {
 				'xxs': '0.5rem',
