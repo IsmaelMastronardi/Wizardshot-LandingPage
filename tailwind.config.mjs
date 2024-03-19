@@ -19,6 +19,7 @@ export default {
 				'customBlack': '#18181c',
 			},
 			fontSize: {
+				'xxsPlus': '0.65rem',
 				'xxs': '0.5rem',
 				'xxxs': '0.46rem'
 			},
