@@ -9,15 +9,15 @@ import star from '../../public/images/star.png';
 import chrome from '../../public/images/chrome.png';
 ---
 
-<section class="flex flex-col w-96 m-auto justify-center text-center gap-20 mb-40">
-  <div class="flex flex-col gap-3">
+<main class="flex flex-col w-96 m-auto justify-center text-center gap-20 mb-40">
+  <section class="flex flex-col gap-3">
     <h1 class="title-text" >Your Magic Wand <br />for Instant Documentation</h1>
     <h2 class="font-openSans text-xl text-black/[0.6] font-bold" >Turn ANY process into a simple <br /> step-by step Guide</h2>
     <div>
       <button class="bg-black text-white px-6 py-2 rounded-lg">install Wizardshot</button>
     </div>
-  </div>
-  <div class="mt-10 text-start w-80 m-auto">
+  </section>
+  <article class="mt-10 text-start w-80 m-auto">
     <p class="text-xs font-bold italic mb-1">It only takes 3 clicks to <br /> publish your first tutorial</p>
     <div class="w-full rounded-md bg-gradient-to-b from-customPurple to-customPink p-3">
       <Image
@@ -25,9 +25,9 @@ import chrome from '../../public/images/chrome.png';
       alt="desktop"
       class='rounded-sm'/>
     </div>
-  </div>
-  <div>
-    <h2 class="title-text">
+  </article>
+  <section>
+    <h2 class="sub-title-text">
       Say Goodbye To Writing Docs, and Hello To Wizardshot Doing it for <br /> YOU.
     </h2>
     <ul class="flex flex-col gap-4">
@@ -41,8 +41,8 @@ import chrome from '../../public/images/chrome.png';
       body="Wizardshot carefully crafts the perfect article based off your actions recorded. Just click “Done” and we’ll write up the article in a second." 
       />
     </ul>
-  </div>
-  <div>
+  </section>
+  <section>
     <h2 class="font-jakartaSans font-bold text-3xl underline">+32 MORE FEATURES</h2>
     <p class="font-jakartaSans font-bold text-lg">INCLUDING A KB INTEGRATION</p>
     <div class="flex my-10">
@@ -65,8 +65,8 @@ import chrome from '../../public/images/chrome.png';
         Editor &  Integrations
       </p>
     </div>
-  </div>
-  <div class="border-4 border-black rounded-lg">
+  </section>
+  <section class="border-4 border-black rounded-lg">
     <div class="p-6 flex flex-col">
       <h3 class="title-text mb-8">Create A Detailed Tutorial In Less Than 3 Clicks</h3>
       <button class="bg-black py-6 rounded-md items-center justify-center mb-14 text-white flex gap-2">
@@ -84,5 +84,32 @@ import chrome from '../../public/images/chrome.png';
         <li><Image src={star} alt="star" class="" /></li>
       </ul>
     </div>
-  </div>
-</section>
+  </section>
+  <section class="px-4">
+    <h2 class="sub-title-text mb-10">Common Questions</h2>
+    <div>
+      <ul class="text-start">
+        <li>
+          <h3 class="accordeonTitle">What is Wizardshot?</h3>
+          <p class="accordeonText">Wizardshot is a web app & chrome extension. 
+            that allows you to create step-by-step tutorials 
+            simply by capturing your screen.
+          </p>
+          <hr class="mb-10"/>
+        </li>
+        <li>
+          <h3 class="accordeonTitle">Whow is Wizardshot Free?</h3>
+          <p class="accordeonText">The costs to run a service is really inexpensive as most of the processing happens in the Chrome extension.
+            Really - all that we have to pay for is <span>super-secure hosting, awesome 24/7 support</span> and that’s it. 
+            <span>We built Wizardshot as a stand-alone product with a deep <span>Helpjuice Knowledge Base</span> integration.</span> 
+          </p>
+          <hr class="mb-10"/>
+        </li>
+        <li>
+          <h3 class="accordeonTitle">Is my data secure?</h3>
+          <hr class="mb-10"/>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
