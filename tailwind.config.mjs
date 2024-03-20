@@ -7,6 +7,7 @@ export default {
         'jakartaSans': ['"Plus Jakarta Sans"', 'sans-serif'],
 				'openSans': ['"Open Sans"', 'sans-serif'],
 				mulish: ['"Mulish"', 'sans-serif'],
+				'alphabetizedCassetteTapes': ['"Alphabetized Cassette Tapes"', 'sans-serif'],
       },
 			colors: {
 				'customPurple': '#ab96f8',
