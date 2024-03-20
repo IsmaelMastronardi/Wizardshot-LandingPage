@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets";
+import star from '../../../public/images/star.png';
+import chrome from '../../../public/images/chrome.png';
+import rainbowArrow1 from '../../../public/images/rainbowArrows/rainbowArrow1.png';
+---
+
+<article class="border-4 border-black rounded-lg relative">
+  <div class="p-6 flex flex-col">
+    <h3 class="title-text mb-8">Create A Detailed Tutorial In Less Than 3 Clicks</h3>
+    <button class="bg-black py-6 rounded-md items-center justify-center mb-14 text-white flex gap-2 bgGradient">
+      <Image src={chrome} alt="chrome" class="w-8 h-8" />
+      <p class="text-2xl">Install Wizardshot</p>
+    </button>
+    <p class="font-extrabold font-jackartaSans text-sm">“Has helped us write help docs 100x faster”<br />
+      <span class="font-bold">– Dany River, Cartier Informatie</span>
+    </p>
+    <ul class="flex justify-center mb-4">
+      <li><Image src={star} alt="star" class="" /></li>
+      <li><Image src={star} alt="star" class="" /></li>
+      <li><Image src={star} alt="star" class="" /></li>
+      <li><Image src={star} alt="star" class="" /></li>
+      <li><Image src={star} alt="star" class="" /></li>
+    </ul>
+  </div>
+  <Image src={rainbowArrow1} alt="arrow" class="absolute -top-10 right-2" />
+</article>
+
+<style>
+.bgGradient {
+	position: relative;
+}
+.bgGradient:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(68, 255, 154, 0.7) 0%,rgba(68, 176, 255, 0.8) 20%, rgba(139, 68, 255, 0.9) 60%, rgba(255, 102, 68, 0.8) 80%, rgba(235, 255, 112, 0.7) 100%);
+    transform: translate3d(0px, 2px, 0) scale(0.95);
+    filter: blur(25px);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+.bgGradient::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+</style>

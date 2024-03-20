@@ -1,9 +1,14 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+import desktopBg from '../../public/images/desktop-bg.png';
+import Header from '../components/Header.astro';
+import Main from '../components/Main.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<p>Wizardshot</p>
-	</main>
+	<Header />
+	<Main />
+	<Footer />
 </Layout>

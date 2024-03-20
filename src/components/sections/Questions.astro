@@ -1,0 +1,41 @@
+---
+import { Image } from 'astro:assets';
+import chevronUp from '../../../public/images/chevronUp.png';
+import chevronDown from '../../../public/images/chevronDown.png';
+---
+
+<section id="questions" class="px-4">
+  <h2 class="sub-title-text mb-10">Common Questions</h2>
+  <div>
+    <ul class="text-start">
+      <li>
+        <h3 class="accordeonTitle">What is Wizardshot?
+          <span><Image src={chevronUp} alt='checvron up' /></span>
+        </h3>
+        <p class="accordeonText">Wizardshot is a web app & chrome extension. 
+          that allows you to create step-by-step tutorials 
+          simply by capturing your screen.
+        </p>
+        <hr class="mb-10"/>
+      </li>
+      <li>
+        <h3 class="accordeonTitle">Whow is Wizardshot Free?
+          <span><Image src={chevronUp} alt='checvron up' /></span>
+        </h3>
+        <p class="accordeonText">The costs to run a service is really inexpensive as most of the processing happens in the Chrome extension.
+          Really - all that we have to pay for is <span class="underline">super-secure hosting, awesome 24/7 support</span> and that’s it. 
+          <span>We built Wizardshot as a stand-alone product with a deep <span>Helpjuice Knowledge Base</span> integration.</span> 
+        </p>
+        <hr class="mb-10"/>
+      </li>
+      <li>
+        <h3 class="accordeonTitle">Is my data secure?
+          <span><Image src={chevronDown} alt=' checvron down' /></span>
+        </h3>
+        <hr class="mb-10"/>
+      </li>
+    </ul>
+  </div>
+  <p class="font-extrabold mb-4 text-sm">Curious To Learn More?</p>
+  <button class="bg-customBlue text-white px-8 py-2 rounded-lg">Visit Help & Community Center</button>
+</section>

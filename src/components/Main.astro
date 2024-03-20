@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import Title from './sections/Title.astro';
+import About from './sections/About.astro';
+import Questions from './sections/Questions.astro';
+import VideoDisplay from './articles/VideoDisplay.astro';
+import Features from './articles/Features.astro';
+import InstallLinkArticle from './articles/InstallLinkArticle.astro';
+import TryWizardshot from './articles/TryWizardshot.astro';
+---
+
+<main class="flex flex-col w-96 m-auto justify-center text-center gap-10 mt-24">
+  <Title />
+  <VideoDisplay />
+  <About />
+  <Features />
+  <InstallLinkArticle />
+  <Questions />
+  <TryWizardshot />
+</main>

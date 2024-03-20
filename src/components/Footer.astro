@@ -1,0 +1,82 @@
+---
+import { Image } from 'astro:assets';
+import appLogo from '../../public/images/header/app-logo.png';
+import instagramLogo from '../../public/images/footer/instagram.png';
+import tiktokLogo from '../../public/images/footer/tiktok.png';
+import chipIcon from '../../public/images/footer/chip.png';
+import tearIcon from '../../public/images/footer/tear.png';
+---
+
+<footer class="px-12 pt-14 flex flex-col gap-12 pb-20 border-t-2 border-black">
+  <div>
+    <div class="flex">
+      <Image src={appLogo} alt="App Logo" class="mr-2 h-8 w-8"/>
+      <h2 class="text-3xl font-bold mb-4">Wizardshot</h2>
+    </div>
+    <p class="text-lg font-semibold">
+      Turn complex process into a <br />
+      simple step-by-step Guide
+    </p>
+    <div class="w-36 h-20 mt-6 text-customGray">
+      <div class="w-full flex">
+        <div class="text-center w-full h-16 border-black border-t-3 border-l-3 border-r-2">
+          <p class="text-4xl font-extrabold">12</p>
+          <p class="font-bold text-sm">YEARS</p>
+        </div>
+        <div class="w-full h-16 flex flex-col justify-center items-center border-black border-t-3 border-r-3 border-l">
+          <p class="text-xxs font-extrabold">BUILT BY</p>
+          <div class="relative h-6 w-6">
+            <Image src={chipIcon} alt="Chip Icon" class=""/>
+            <Image src={tearIcon} alt='Tear Icon' class='absolute top-2 left-2' />
+          </div>
+          <p class="text-xxs font-extrabold">HELPJUICE</p>
+        </div>
+      </div>
+      <div class="w-full border-x-3 border-black border-y-3 text-center py-1">
+        <p class="text-xxxs font-bold">
+          #1 Rated Knowledge Base Software
+        </p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="flex justify-between">
+      <div>
+        <p class="footerSubTitle">Learn more</p>
+        <ul class="footerText">
+          <li><p>Wizardshot</p></li>
+          <li><p>Community Page</p></li>
+          <li><p>Help Center</p></li>
+          <li><p>Security Information</p></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footerSubTitle">Company</p>
+        <ul class="footerText">
+          <li><p>About Us</p></li>
+          <li><p>Status Page</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="flex flex-col gap-4">
+      <div class="flex gap-4">
+        <Image src={tiktokLogo} alt="Tiktok Logo" />
+        <Image src={instagramLogo} alt="Instagram Logo" />
+      </div>
+      <div class="flex gap-4">
+        <p class="footerSubTitle">Log in</p>
+        <p class="footerSubTitle">Sign Up</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <hr class="mb-8"/>
+    <div class="text-center">
+      <p class="footerTextSmall">📞 +1 (833) 387 3877</p>
+      <p class="footerTextSmall">✉️ success@Wizardshot.com</p>
+      <p class="text-customLightGray2 mt-8">&#169; 2024 Wizardshot - All rights reserved</p>
+    </div>
+  </div>
+</footer>

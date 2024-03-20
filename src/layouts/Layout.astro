@@ -12,7 +12,16 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+		<link href="https://fonts.cdnfonts.com/css/alphabetized-cassette-tapes" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -21,26 +30,45 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+	@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+	body {
+		@apply font-mulish
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+	.menuLink {
+		@apply font-openSans text-lg text-customGray2 pb-8
+	}
+	.title-text {
+		@apply font-jakartaSans font-extrabold text-4xl
+	}
+	.sub-title-text {
+		@apply font-jakartaSans font-extrabold text-3xl
+	
+	}
+	.featuresTitles {
+		@apply font-jakartaSans text-2xl text-customLightGray3 z-10 underline
+	}
+	.featuresText {
+		@apply font-openSans text-xxs text-customLightGray3 z-10 flex items-end
+	}
+	.accordeonTitle {
+		@apply font-jakartaSans font-bold text-customGray2 mb-4  flex justify-between
+	}
+	.accordeonText {
+		@apply font-openSans font-medium text-sm text-customGray2 mb-4
+	}
+	.footerSubTitle {
+		@apply  font-bold text-customGray2 text-2xl pb-2
+	
+	}
+	.footerText {
+		@apply font-semibold text-lg text-customGray2
+	}
+	.footerTextSmall {
+		@apply font-bold text-sm 
+	}
+	.button1 {
+		@apply bg-customBlack text-white px-4 py-2 rounded-lg flex text-sm 
 	}
 </style>

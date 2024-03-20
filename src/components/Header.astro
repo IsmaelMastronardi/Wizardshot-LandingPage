@@ -1,0 +1,75 @@
+---
+import { Image } from 'astro:assets'
+import appLogo from '../../public/images/header/app-logo.png'
+import hamburger from '../../public/images/header/hamburger-menu.png'
+import xIcon from '../../public/images/header/x.png';
+import chromeLogo from '../../public/images/chrome.png';
+---
+
+<section class="h-16 flex w-96 m-auto z-50 bg-white fixed right-0 left-0 top-0">
+  <div class="flex justify-between items-center w-full h-16">
+    <div class="flex gap-1 items-center">
+      <Image src={appLogo} alt="app logo" class="w-5 h-5" />
+      <p class="font-jakartaSans font-bold">Wizardshot</p>
+    </div>
+    <button id="hamburguerButton" class="block">
+      <Image src={hamburger} alt="open menu" />
+    </button>
+    <button id="exitButton" class="hidden">
+      <Image src={xIcon} alt="close menu" />
+    </button>
+  </div>
+  <hr />
+  <div id="hiddenMenu" class="hidden pt-10">
+    <ul>
+      <li class="menuLink"><a href="#mainTitle">Home</a></li>
+      <li class="menuLink"><a href="#features">Features</a></li>
+      <li class="menuLink"><a href="#About">About</a></li>
+      <li class="menuLink"><a href="#questions">Help Center & Comunity</a></li>
+      <li class="menuLink"><a>Login</a></li>
+    </ul>
+    <hr />
+    <div class="flex flex-col justify-center items-center pt-10 gap-2">
+      <button class="button1">
+        <Image src={chromeLogo} alt="chrome logo" class="w-5 h-5 mr-2" />
+        Install Wizardshot
+      </button>
+      <p class="font-alphabetizedCassetteTapes font-bold text-xl">100% free, forever &#x1F911;</p>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  const menu = document.querySelector('section');
+  const hamburguerButton = document.getElementById('hamburguerButton');
+  const exitButton = document.getElementById('exitButton');
+  const hiddenMenu = document.getElementById('hiddenMenu');
+  const liItems  = document.querySelectorAll('.menuLink');
+  hamburguerButton.addEventListener('click', () => {
+    menu.classList.toggle('bottom-0');
+    menu.classList.toggle('h-16');
+    menu.classList.toggle('flex-col');
+    exitButton.classList.toggle('hidden');
+    hamburguerButton.classList.toggle('hidden');
+    hiddenMenu.classList.toggle('hidden');
+  });
+  exitButton.addEventListener('click', () => {
+    menu.classList.toggle('bottom-0');
+    menu.classList.toggle('h-16');
+    menu.classList.toggle('flex-col');
+    exitButton.classList.toggle('hidden');
+    hamburguerButton.classList.toggle('hidden');
+    hiddenMenu.classList.toggle('hidden');
+  });
+  liItems.forEach((el) => {
+    el.addEventListener('click', () => {
+    menu.classList.toggle('bottom-0');
+    menu.classList.toggle('h-16');
+    menu.classList.toggle('flex-col');
+    exitButton.classList.toggle('hidden');
+    hamburguerButton.classList.toggle('hidden');
+    hiddenMenu.classList.toggle('hidden');
+  });
+  })
+</script>
