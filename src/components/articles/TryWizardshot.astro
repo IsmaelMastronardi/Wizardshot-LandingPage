@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import whiteArrow from '../../../public/images/whiteArrow.png';
 ---
 
 <article class="">
@@ -10,10 +9,9 @@ import whiteArrow from '../../../public/images/whiteArrow.png';
       <h3 class="text-2xl font-medium mb-3">Create Tutorials in 3 Clicks.</h3>
       <p class="text-sm text-customLightGray opacity-60">With WizardShot, You Click Capture, And We’ll Capture What’s Happening on <br class="hidden lg:block"/> Your Screen And Turn It Into A Tutorial.</p>
       <div class="flex justify-end py-4">
-        <div class="w-44 bgGradient lg:mr-20">
-          <p class="text-xl underline bgGradient w-full flex items-center justify-between">Try Wizardshot
-            <Image src={whiteArrow} alt="whiteArrow" />
-          </p>
+        <div class="w-44 bgGradient lg:mr-20 flex hover:text-customLightGray3 cursor-pointer">
+          <p class="text-xl underline bgGradient w-full ">Try Wizardshot</p>
+          <p class="text-xl bgGradient">&#8594;</p>
         </div>
       </div>
     </div>

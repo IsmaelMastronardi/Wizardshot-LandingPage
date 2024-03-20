@@ -5,8 +5,7 @@ import hamburger from '../../public/images/header/hamburger-menu.png'
 import xIcon from '../../public/images/header/x.png';
 import chromeLogo from '../../public/images/chrome.png';
 ---
-
-<section class="h-16 flex w-96 m-auto z-50 bg-white right-0 left-0 top-0 flex-col lg:w-3/4 lg:relative lg:flex-row lg:mt-10">
+<header class="h-16 flex w-11/12 m-auto z-50 bg-white right-0 left-0 top-0 flex-col lg:w-3/4 lg:relative lg:flex-row lg:mt-10 menuTransition">
   <div class="flex justify-between items-center w-full h-16 lg:hidden">
     <div class="flex gap-1 items-center h-16">
       <Image src={appLogo} alt="app logo" class="w-5 h-5" />
@@ -44,39 +43,33 @@ import chromeLogo from '../../public/images/chrome.png';
       </div>
     </div>
   </div>
-</section>
+</header>
 
 
 <script>
-  const menu = document.querySelector('section');
+  const menu = document.querySelector('header');
   const hamburguerButton = document.getElementById('hamburguerButton');
   const exitButton = document.getElementById('exitButton');
   const hiddenMenu = document.getElementById('hiddenMenu');
   const liItems  = document.querySelectorAll('.menuLink');
   hamburguerButton.addEventListener('click', () => {
-    menu.classList.toggle('bottom-0');
-    menu.classList.toggle('h-16');
-    menu.classList.toggle('fixed');
-    exitButton.classList.toggle('hidden');
-    hamburguerButton.classList.toggle('hidden');
-    hiddenMenu.classList.toggle('hidden');
+    toggleMenu();
   });
   exitButton.addEventListener('click', () => {
-    menu.classList.toggle('bottom-0');
-    menu.classList.toggle('h-16');
-    menu.classList.toggle('fixed');
-    exitButton.classList.toggle('hidden');
-    hamburguerButton.classList.toggle('hidden');
-    hiddenMenu.classList.toggle('hidden');
+    toggleMenu();
   });
   liItems.forEach((el) => {
     el.addEventListener('click', () => {
+      toggleMenu();
+  });
+  })
+
+  const toggleMenu = () => {
     menu.classList.toggle('bottom-0');
     menu.classList.toggle('h-16');
     menu.classList.toggle('fixed');
     exitButton.classList.toggle('hidden');
     hamburguerButton.classList.toggle('hidden');
     hiddenMenu.classList.toggle('hidden');
-  });
-  })
+  };
 </script>
