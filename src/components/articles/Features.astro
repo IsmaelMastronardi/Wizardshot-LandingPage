@@ -1,7 +1,7 @@
 <article id="features">
   <h2 class="font-jakartaSans font-bold text-3xl underline">+32 MORE FEATURES</h2>
   <p class="font-jakartaSans font-bold text-lg">INCLUDING A KB INTEGRATION</p>
-  <div class="flex my-10">
+  <div class="flex my-10 relative z-10 text-start">
     <p class="featuresTitles">
       Free
     </p>
@@ -20,5 +20,17 @@
     <p class="featuresText">
       Editor &  Integrations
     </p>
+    <div  class="gradiantBg z-0"/>
   </div>
+
 </article>
+<style>
+  .gradiantBg {
+    background: linear-gradient(90deg, rgba(235, 255, 112, 0.2) 0%, rgba(255, 102, 68, 0.3) 20%, rgba(139, 68, 255, 0.5) 60%, rgba(68, 176, 255, 0.3) 80%, rgba(68, 255, 154, 0.2) 100%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10px;
+    bottom: 2px;
+  }
+</style>
