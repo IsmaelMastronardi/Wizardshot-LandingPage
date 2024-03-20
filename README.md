@@ -1,54 +1,101 @@
-# Astro Starter Kit: Basics
+<a name="readme-top"></a>
 
-```sh
-npm create astro@latest -- --template basics
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Linters](#linters)
+- [👥 Authors](#authors)
+- [🤝 Contributing](#contributing)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 Wizardshoot Landing Page<a name="about-project"></a>
+
+**Wizardshoot Landing Page** This is the Landing Page for Wizardshoot, done as test for Helpjuice.
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://astro.build/">Astro</a></li>
+    <li><a href="https://www.tailwindcss.com/">TailwindCSS</a></li>
+  </ul>
+</details>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Install <a name="install"></a>
+
+Clone the repository:
+
+```bash
+ git clone https://github.com/IsmaelMastronardi/Wizardshot-LandingPage.git
+ cd Wizardshot-LandingPage
+ code .  # To open VS Code Editor
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+### Usage <a name="usage"></a>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- Install the dependencies and start the server:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+  ```bash
+    npm install
+  ```	
 
-## 🚀 Project Structure
+- Run the app in development mode:
 
-Inside of your Astro project, you'll see the following folders and files:
+  ```bash
+    npm start
+  ```
+<!-- LIVE DEMO -->
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## 🚀 Live Demo <a name="live-demo"></a>
+- [Link to front end](https://wizardshot-landingpage.onrender.com/)
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- AUTHORS -->
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 👥 Authors <a name="authors"></a>
 
-Any static assets, like images, can be placed in the `public/` directory.
+👤 **Ismael Mastronardi**
 
-## 🧞 Commands
+- GitHub: [IsmaelMastronardi](https://github.com/IsmaelMastronardi)
+- LinkedIn: [Ismael Mastronardi](https://www.linkedin.com/in/ismael-mastronardi-361873271/)
 
-All commands are run from the root of the project, from a terminal:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+<!-- CONTRIBUTING -->
 
-## 👀 Want to learn more?
+## 🤝 Contributing <a name="contributing"></a>
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/IsmaelMastronardi/Wizardshot-LandingPage/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
