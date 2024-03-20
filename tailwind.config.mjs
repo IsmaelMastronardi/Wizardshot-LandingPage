@@ -15,6 +15,7 @@ export default {
 				'customGray2': '#18181b',
 				'customLightGray': '#f9fafb',
 				'customLightGray2': '#98a2b3',
+				'customLightGray3': '#63636e',
 				'customBlue': '#03132e',
 				'customBlack': '#18181c',
 			},
