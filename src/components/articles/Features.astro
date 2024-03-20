@@ -3,10 +3,13 @@ import { Image } from 'astro:assets';
 import guyFace from '../../../public/images/guyFace.png';
 ---
 
-<article id="features" class="relative">
-  <h2 class="font-jakartaSans font-bold text-3xl underline">+32 MORE FEATURES</h2>
-  <p class="font-jakartaSans font-bold text-lg lg:mb-32">INCLUDING A KB INTEGRATION</p>
-  <Image src={guyFace} alt="guy face" class="absolute top-10 right-0" />
+<article id="features">
+  <div class="relative inline-block">
+    <h2 class="font-jakartaSans font-bold text-3xl underline inline-block">+32 MORE FEATURES</h2>
+    <br />
+    <p class="font-jakartaSans font-bold text-lg lg:mb-32 lg:inline-block">INCLUDING A KB INTEGRATION</p>
+    <Image src={guyFace} alt="guy face" class="absolute top-10 -right-10 lg:-right-40" />
+  </div>
   <div class="flex mt-10 relative z-10 text-start lg:max-w-2xl lg:m-auto lg:flex lg:justify-center">
     <p class="featuresTitles">
       Free
