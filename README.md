@@ -29,8 +29,10 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://astro.build/">Astro</a></li>
+    <li><a>HTML</a></li>
+    <li><a>CSS</a></li>
     <li><a href="https://www.tailwindcss.com/">TailwindCSS</a></li>
+    <li><a href="https://astro.build/">Astro</a></li>
   </ul>
 </details>
 
